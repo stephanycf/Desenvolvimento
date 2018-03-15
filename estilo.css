@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#meumapa {
+  height: 95%;
+  width: 95%;
+}
+h1{
+  color: red;
+  text-align: center;
+border-style: solid;
+}
