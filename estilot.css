@@ -1,10 +1,10 @@
 html, body {
   height: 100%;
   width: 100%;
-    position: absolute;
+  //  position: absolute;
 }
 
-#meumapa {
+#teresopolis {
   height: 95%;
   width: 95%;
 }
@@ -13,9 +13,9 @@ h1{
   text-align: center;
 border-style: solid;
 }
-img {
+/* img {
   position: absolute;
   top: 15%
   left: 1%
   z-index: 500;
-}
+} */
