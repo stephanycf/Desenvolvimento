@@ -27,6 +27,11 @@ def main():
         
     elif choice == 'Mapa':
         st.subheader("Visualizar Mapa")
+
+        # LINHA DE DIAGNÓSTICO TEMPORÁRIA:
+        # Isso vai desenhar a tabela de dados na tela do seu app para você ver os nomes das colunas
+        st.write("Colunas disponíveis no arquivo:", polygons.columns.tolist())
+        st.dataframe(polygons.head(3))
         
         # O bloco 'with st.echo()' mostra o código na tela enquanto o executa. 
         # Toda a indentação interna dele foi corrigida.
