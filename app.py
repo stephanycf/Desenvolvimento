@@ -28,8 +28,8 @@ def main():
 		with st.echo():
 
 #mapa com Foluim
-		m = folium.Map (location = [-25.5,-49.3],zoom_start = 9)
-	  folium.Choropleth(
+	m = folium.Map (location = [-25.5,-49.3],zoom_start = 9)
+	folium.Choropleth(
         geo_data=bairros_finais.to_json(),
         name='Áreas de Extração Mineral',
         data=bairros_finais,
