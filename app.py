@@ -9,8 +9,8 @@ PAGE_CONFIG = {"page_title": "Dashboard temático com Streamlit", "page_icon": "
 st.set_page_config(**PAGE_CONFIG)
 
 # Carregamento dos dados (feito uma única vez fora da função main para otimizar)
-url_ext_mineral = 'https://raw.githubusercontent.com/stephanycf/Desenvolvimento/main/Extracao_Mineral_-_Mapeamento_por_radar_1_10.000_0.geojson'
-url_municipios = 'https://raw.githubusercontent.com/stephanycf/Desenvolvimento/main/pr_mun.geojson'
+url_ext_mineral = 'Extracao_Mineral_-_Mapeamento_por_radar_1_10.000_0.geojson'
+url_municipios = 'pr_mun.geojson'
 
 polygons = gpd.read_file(url_ext_mineral)
 points = gpd.read_file(url_municipios)
