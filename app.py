@@ -9,7 +9,7 @@ PAGE_CONFIG = {"page_title": "Dashboard temático com Streamlit", "page_icon": "
 st.set_page_config(**PAGE_CONFIG)
 
 # Carregamento dos dados (feito uma única vez fora da função main para otimizar)
-url_ext_mineral = 'Extracao_Mineral_-_Mapeamento_por_radar_1_10.000_0.geojson'
+url_ext_mineral = 'cobranca_mineracao.geojson'
 url_municipios = 'pr_mun.geojson'
 
 polygons = gpd.read_file(url_ext_mineral)
@@ -41,12 +41,12 @@ def main():
             
             folium.Choropleth(
                 geo_data=polygons.to_json(),  # Corrigido: mudado de bairros_finais para polygons
-                name='Áreas de Extração Mineral',
+                name='Áreas de Cobrança da Mineração',
                 data=polygons,                # Corrigido: mudado de bairros_finais para polygons
-                columns=['NOME_DA_COLUNA_ID', 'NOME_DA_COLUNA_DADO'],
-                key_on='feature.properties.NOME_DA_COLUNA_ID'',
+                columns=['objectid', 'cob_tot'],
+                key_on='feature.properties.objectid',
                 fill_color='YlGn',
-                legend_name='Extração Mineral'
+                legend_name='Mineração'
             ).add_to(m)
             
             folium.LayerControl().add_to(m)
