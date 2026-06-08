@@ -43,8 +43,8 @@ def main():
                 geo_data=polygons.to_json(),  # Corrigido: mudado de bairros_finais para polygons
                 name='Áreas de Extração Mineral',
                 data=polygons,                # Corrigido: mudado de bairros_finais para polygons
-                columns=['OBJECTID', 'num_pto'],
-                key_on='feature.properties.OBJECTID',
+                columns=['NOME_DA_COLUNA_ID', 'NOME_DA_COLUNA_DADO'],
+                key_on='feature.properties.NOME_DA_COLUNA_ID'',
                 fill_color='YlGn',
                 legend_name='Extração Mineral'
             ).add_to(m)
