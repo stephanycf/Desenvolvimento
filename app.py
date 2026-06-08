@@ -16,8 +16,8 @@ polygons = gpd.read_file(url_ext_mineral)
 points = gpd.read_file(url_municipios)
 
 def main():
-    st.title("Como adicionar mapas no StreamLit")
-    st.subheader("Baseado num caderno do Colab")
+    st.title("Meu mapa de Mineração")
+    st.subheader("Dados de área de mineração, calculados por município do Paraná")
     
     menu = ["Home", "Mapa"]
     choice = st.sidebar.selectbox('Menu', menu)
