@@ -37,7 +37,7 @@ def main():
         # Toda a indentação interna dele foi corrigida.
         with st.echo():
             # Criação do mapa com Folium
-			import folium
+		import folium
 
 			# 1. (Opcional) Criar faixas de classificação (bins) baseadas nos seus dados
 			# Isso evita que o Folium se perca caso haja valores muito discrepantes (outliers)
