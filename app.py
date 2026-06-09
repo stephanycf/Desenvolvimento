@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import gpd  # Nota: se der erro, mude para 'import geopandas as gpd'
+import geopandas as gpd
 from streamlit_folium import folium_static
 import folium
 
